@@ -6,4 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+p 'seed start'
 Admin.create(email: 'admin@example.com', password: 'admin123!#@') if Admin.count.zero?
+p 'seed done'
